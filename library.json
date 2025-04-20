@@ -1,0 +1,19 @@
+{
+    "name": "FreeRTOS",
+    "version": "",
+    "keywords": "",
+    "description": "FreeRTOS, a Real Time Operating System",
+    "frameworks": ["cmsis"],
+    "platforms": "ststm32",
+    "build": {
+        "libArchive": false,
+        "flags": [
+            "-I.",
+            "-IFreeRTOS/include",
+            "-IFreeRTOS/portable/GCC/ARM_CM4F/",
+            "-IFreeRTOS/portable/MemMang",
+            "-mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp"
+        ],
+	    "srcFilter": "+<FreeRTOS/**> -<FreeRTOS/examples/**> -<FreeRTOS/portable/**> +<FreeRTOS/portable/GCC/ARM_CM4F/**> +<FreeRTOS/portable/Common/**> +<FreeRTOS/portable/MemMang/heap_4.c>"
+    }
+}
