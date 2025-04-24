@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
     "name": "FreeRTOS",
     "version": "",
     "keywords": "",
@@ -14,6 +15,6 @@
             "-IFreeRTOS/portable/MemMang",
             "-mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp"
         ],
-	    "srcFilter": "+<FreeRTOS/**> -<FreeRTOS/examples/**> -<FreeRTOS/portable/**> +<FreeRTOS/portable/GCC/ARM_CM4F/**> +<FreeRTOS/portable/Common/**> +<FreeRTOS/portable/MemMang/heap_4.c>"
+	    "srcFilter": "+<FreeRTOS/**> -<FreeRTOS/examples/**> -<FreeRTOS/portable/**> +<FreeRTOS/portable/GCC/ARM_CM4F/**> +<FreeRTOS/portable/Common/**> +<FreeRTOS/portable/MemMang/heap_3.c>"
     }
 }
